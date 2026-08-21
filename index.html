@@ -1,30 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 1</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blue Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-badge">B</div>
+                <span>BlueDash</span>
+            </div>
 
-    <header>
-        <h1>Project 1</h1>
-    </header>
+            <nav class="nav">
+                <a href="#" class="active">Overview</a>
+                <a href="#">Analytics</a>
+                <a href="#">Reports</a>
+                <a href="#">Customers</a>
+                <a href="#">Products</a>
+                <a href="#">Settings</a>
+            </nav>
 
-    <main>
-        <section>
-            <h2>Welcome</h2>
-            <p>My BFB 321 Project 1.</p>
-        </section>
-    </main>
+            <div class="user-card">
+                <div class="avatar">AR</div>
+                <div>
+                    <strong>Ariana Reed</strong>
+                    <small>Admin</small>
+                </div>
+            </div>
+        </aside>
 
-    <footer>
-        <p>Project 1 - 2026</p>
-    </footer>
+        <main class="main-content">
+            <header class="topbar">
+                <div>
+                    <p class="eyebrow">Dashboard</p>
+                    <h1>Performance Overview</h1>
+                </div>
 
+                <div class="actions">
+                    <button class="btn btn-light">Export</button>
+                    <button class="btn btn-primary">New Report</button>
+                </div>
+            </header>
+
+            <section class="stats-grid">
+                <article class="stat-card highlight">
+                    <span class="label">Revenue</span>
+                    <h2>$84,260</h2>
+                    <p class="trend up">+12.4% vs last month</p>
+                </article>
+
+                <article class="stat-card">
+                    <span class="label">Orders</span>
+                    <h2>2,430</h2>
+                    <p class="trend up">+8.1% vs last month</p>
+                </article>
+
+                <article class="stat-card">
+                    <span class="label">Conversion</span>
+                    <h2>4.7%</h2>
+                    <p class="trend up">+0.9% vs last month</p>
+                </article>
+
+                <article class="stat-card">
+                    <span class="label">Avg. Growth</span>
+                    <h2>18.3%</h2>
+                    <p class="trend down">-1.2% vs last month</p>
+                </article>
+            </section>
+
+            <section class="content-grid">
+                <div class="panel chart-panel">
+                    <div class="panel-header">
+                        <h3>Traffic Summary</h3>
+                        <span>Last 6 months</span>
+                    </div>
+
+                    <div class="chart">
+                        <div class="bars">
+                            <span style="height: 40%"></span>
+                            <span style="height: 55%"></span>
+                            <span style="height: 68%"></span>
+                            <span style="height: 82%"></span>
+                            <span style="height: 72%"></span>
+                            <span style="height: 96%"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3>Goals</h3>
+                        <span>Progress</span>
+                    </div>
+
+                    <div class="goal">
+                        <div class="goal-row">
+                            <label>Sales Target</label>
+                            <strong>75%</strong>
+                        </div>
+                        <div class="progress"><span style="width: 75%"></span></div>
+                    </div>
+
+                    <div class="goal">
+                        <div class="goal-row">
+                            <label>New Clients</label>
+                            <strong>58%</strong>
+                        </div>
+                        <div class="progress"><span style="width: 58%"></span></div>
+                    </div>
+
+                    <div class="goal">
+                        <div class="goal-row">
+                            <label>Retention</label>
+                            <strong>89%</strong>
+                        </div>
+                        <div class="progress"><span style="width: 89%"></span></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="panel table-panel">
+                <div class="panel-header">
+                    <h3>Recent Activity</h3>
+                    <span>Updated 10 min ago</span>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Project</th>
+                            <th>Owner</th>
+                            <th>Status</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Website Redesign</td>
+                            <td>Maria</td>
+                            <td><span class="badge success">Complete</span></td>
+                            <td>$12,400</td>
+                        </tr>
+                        <tr>
+                            <td>CRM Integration</td>
+                            <td>Daniel</td>
+                            <td><span class="badge warning">In Review</span></td>
+                            <td>$8,950</td>
+                        </tr>
+                        <tr>
+                            <td>Marketing Campaign</td>
+                            <td>Jude</td>
+                            <td><span class="badge info">Active</span></td>
+                            <td>$5,820</td>
+                        </tr>
+                        <tr>
+                            <td>Analytics Setup</td>
+                            <td>Priya</td>
+                            <td><span class="badge success">Complete</span></td>
+                            <td>$3,200</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
 </body>
-
 </html>
